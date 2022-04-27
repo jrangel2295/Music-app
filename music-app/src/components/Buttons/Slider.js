@@ -10,6 +10,7 @@ export default function DiscreteSlider() {
   return (
     <Box sx={{ width: 200 }}>
       <Slider
+        className='slider'
         aria-label="Temperature"
         defaultValue={30}
         getAriaValueText={valuetext}
