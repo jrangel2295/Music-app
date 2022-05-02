@@ -10,11 +10,12 @@ export default function BasicCard3() {
     <Card className='card-3' sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Master Volume
+          <h1>Sound Quality</h1>
         </Typography>
         <Typography variant="body2">
-          Overrides all other sounds <br /> 
-          settings in this app
+          <p className='box-text'>Manually control the music<br></br>
+          quality in even of poor<br></br>
+          connection</p>
         </Typography>
       </CardContent>
       <Dropdown />

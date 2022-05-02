@@ -10,11 +10,11 @@ export default function BasicCard() {
     <Card className='card-2' sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Master Volume
+          <h1>Master Volume</h1>
         </Typography>
         <Typography variant="body2">
-          Overrides all other sounds <br /> 
-          settings in this app
+          <p className='box-text'>Overrides all other sounds <br /> 
+          settings in this app</p>
         </Typography>
       </CardContent>
       <Slider />

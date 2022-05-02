@@ -5,19 +5,21 @@ import Typography from '@mui/material/Typography';
 import Switch from '../Buttons/Switch'
 import './Card.css'
 
-export default function BasicCard1() {
+export default function BasicCard1(props) {
+  function handleClick(){
+    props.setIsOnline(!props.IsOnline)
+  }
   return (
     <Card className='card-1' sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Master Volume
+          <h1>Online Mode</h1>
         </Typography>
         <Typography variant="body2">
-          Overrides all other sounds <br /> 
-          settings in this app
+          <p className='box-text'> is this application connected to the internet?</p>
         </Typography>
       </CardContent>
-      <Switch />
+      <Switch onClick={handleClick}/>
     </Card>
 
   );

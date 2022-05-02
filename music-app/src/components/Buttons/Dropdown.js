@@ -15,6 +15,7 @@ export default function BasicSelect() {
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
         <Select
+          className='dropdown'
           value={state}
           onChange={handleChange}
         >
